@@ -1,0 +1,5311 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SmartVerifyIOSSDK",
+    "printedName": "SmartVerifyIOSSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPClient",
+        "printedName": "HTTPClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getJSON",
+            "printedName": "getJSON(path:headers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK10HTTPClientP7getJSON4path7headers10Foundation4DataV_So17NSHTTPURLResponseCtSS_SDyS2SGtYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK10HTTPClientP7getJSON4path7headers10Foundation4DataV_So17NSHTTPURLResponseCtSS_SDyS2SGtYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SmartVerifyIOSSDK.HTTPClient>",
+            "sugared_genericSig": "<Self where Self : SmartVerifyIOSSDK.HTTPClient>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getJSON",
+            "printedName": "getJSON(path:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK10HTTPClientP7getJSON4path10Foundation4DataV_So17NSHTTPURLResponseCtSS_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK10HTTPClientP7getJSON4path10Foundation4DataV_So17NSHTTPURLResponseCtSS_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SmartVerifyIOSSDK.HTTPClient>",
+            "sugared_genericSig": "<Self where Self : SmartVerifyIOSSDK.HTTPClient>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17SmartVerifyIOSSDK10HTTPClientP",
+        "mangledName": "$s17SmartVerifyIOSSDK10HTTPClientP",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultHTTPClient",
+        "printedName": "DefaultHTTPClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(enableLogs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultHTTPClient",
+                "printedName": "SmartVerifyIOSSDK.DefaultHTTPClient",
+                "usr": "s:17SmartVerifyIOSSDK17DefaultHTTPClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK17DefaultHTTPClientC10enableLogsACSb_tcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK17DefaultHTTPClientC10enableLogsACSb_tcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getJSON",
+            "printedName": "getJSON(path:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK17DefaultHTTPClientC7getJSON4path10Foundation4DataV_So17NSHTTPURLResponseCtSS_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK17DefaultHTTPClientC7getJSON4path10Foundation4DataV_So17NSHTTPURLResponseCtSS_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getJSON",
+            "printedName": "getJSON(path:headers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK17DefaultHTTPClientC7getJSON4path7headers10Foundation4DataV_So17NSHTTPURLResponseCtSS_SDyS2SGtYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK17DefaultHTTPClientC7getJSON4path7headers10Foundation4DataV_So17NSHTTPURLResponseCtSS_SDyS2SGtYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK17DefaultHTTPClientC",
+        "mangledName": "$s17SmartVerifyIOSSDK17DefaultHTTPClientC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "HTTPClient",
+            "printedName": "HTTPClient",
+            "usr": "s:17SmartVerifyIOSSDK10HTTPClientP",
+            "mangledName": "$s17SmartVerifyIOSSDK10HTTPClientP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartVerifyConfig",
+        "printedName": "SmartVerifyConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifyConfig",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifyConfig",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC6sharedACvpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC6sharedACvpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifyConfig",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyConfig",
+                    "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC6sharedACvgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC6sharedACvgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC6apiKeySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC6apiKeySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC6apiKeySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC6apiKeySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "liveness",
+            "printedName": "liveness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8livenessSdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8livenessSdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8livenessSdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8livenessSdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "quality",
+            "printedName": "quality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC7qualitySdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC7qualitySdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC7qualitySdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC7qualitySdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyesOpen",
+            "printedName": "eyesOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8eyesOpenSdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8eyesOpenSdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8eyesOpenSdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8eyesOpenSdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverKey",
+            "printedName": "serverKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC9serverKeySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC9serverKeySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC9serverKeySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC9serverKeySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverIv",
+            "printedName": "serverIv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8serverIvSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8serverIvSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC8serverIvSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC8serverIvSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC9timestampSivp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC9timestampSivp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC9timestampSivg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC9timestampSivg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenseKey",
+            "printedName": "licenseKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC10licenseKeySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC10licenseKeySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC10licenseKeySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC10licenseKeySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isInitialized",
+            "printedName": "isInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC13isInitializedSbvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC13isInitializedSbvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC13isInitializedSbvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC13isInitializedSbvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(apiKey:wire:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireResponse",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC5apply6apiKey4wireySS_AA16InitWireResponseVtF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC5apply6apiKey4wireySS_AA16InitWireResponseVtF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC5resetyyF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC5resetyyF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK0aB6ConfigC",
+        "mangledName": "$s17SmartVerifyIOSSDK0aB6ConfigC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EncryptionService",
+        "printedName": "EncryptionService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EncryptionService",
+                "printedName": "SmartVerifyIOSSDK.EncryptionService",
+                "usr": "s:17SmartVerifyIOSSDK17EncryptionServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK17EncryptionServiceCACycfc",
+            "mangledName": "$s17SmartVerifyIOSSDK17EncryptionServiceCACycfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encryptBiometricHash",
+            "printedName": "encryptBiometricHash(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK17EncryptionServiceC20encryptBiometricHashySSSgSSF",
+            "mangledName": "$s17SmartVerifyIOSSDK17EncryptionServiceC20encryptBiometricHashySSSgSSF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK17EncryptionServiceC",
+        "mangledName": "$s17SmartVerifyIOSSDK17EncryptionServiceC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EncryptionUtil",
+        "printedName": "EncryptionUtil",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PUBLIC_KEY",
+            "printedName": "PUBLIC_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV10PUBLIC_KEYSSvpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV10PUBLIC_KEYSSvpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV10PUBLIC_KEYSSvgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV10PUBLIC_KEYSSvgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "MAX_CHUNK_SIZE",
+            "printedName": "MAX_CHUNK_SIZE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV14MAX_CHUNK_SIZESivpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV14MAX_CHUNK_SIZESivpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV14MAX_CHUNK_SIZESivgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV14MAX_CHUNK_SIZESivgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CHUNK_DELIMITER",
+            "printedName": "CHUNK_DELIMITER",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV15CHUNK_DELIMITERSSvpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV15CHUNK_DELIMITERSSvpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV15CHUNK_DELIMITERSSvgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV15CHUNK_DELIMITERSSvgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TIMESTAMP_DELIMITER",
+            "printedName": "TIMESTAMP_DELIMITER",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV19TIMESTAMP_DELIMITERSSvpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV19TIMESTAMP_DELIMITERSSvpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV19TIMESTAMP_DELIMITERSSvgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV19TIMESTAMP_DELIMITERSSvgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK14EncryptionUtilV",
+        "mangledName": "$s17SmartVerifyIOSSDK14EncryptionUtilV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartVerifyCrypto",
+        "printedName": "SmartVerifyCrypto",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(key:iv:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifyCrypto",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifyCrypto",
+                "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC3key2ivACSS_SStKcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6CryptoC3key2ivACSS_SStKcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "decryptBase64ToUTF8String",
+            "printedName": "decryptBase64ToUTF8String(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC25decryptBase64ToUTF8StringyS2SKF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6CryptoC25decryptBase64ToUTF8StringyS2SKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encryptUTF8StringToBase64",
+            "printedName": "encryptUTF8StringToBase64(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC25encryptUTF8StringToBase64yS2SKF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB6CryptoC25encryptUTF8StringToBase64yS2SKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC",
+        "mangledName": "$s17SmartVerifyIOSSDK0aB6CryptoC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartVerifyTimestampValidator",
+        "printedName": "SmartVerifyTimestampValidator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "validateWithinAbsoluteWindow",
+            "printedName": "validateWithinAbsoluteWindow(serverEpochSeconds:graceMinutes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB18TimestampValidatorO28validateWithinAbsoluteWindow18serverEpochSeconds12graceMinutesySi_SitKFZ",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB18TimestampValidatorO28validateWithinAbsoluteWindow18serverEpochSeconds12graceMinutesySi_SitKFZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17SmartVerifyIOSSDK0aB18TimestampValidatorO",
+        "mangledName": "$s17SmartVerifyIOSSDK0aB18TimestampValidatorO",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BiometricCaptureService",
+        "printedName": "BiometricCaptureService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "captureBiometricData",
+            "printedName": "captureBiometricData(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK23BiometricCaptureServiceC07captureD4Data4fromSSSo16UIViewControllerC_tYaKFZ",
+            "mangledName": "$s17SmartVerifyIOSSDK23BiometricCaptureServiceC07captureD4Data4fromSSSo16UIViewControllerC_tYaKFZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK23BiometricCaptureServiceC",
+        "mangledName": "$s17SmartVerifyIOSSDK23BiometricCaptureServiceC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BiometricCaptureError",
+        "printedName": "BiometricCaptureError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "captureFailed",
+            "printedName": "captureFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.BiometricCaptureError.Type) -> (Swift.String) -> SmartVerifyIOSSDK.BiometricCaptureError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SmartVerifyIOSSDK.BiometricCaptureError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometricCaptureError",
+                        "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                        "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.BiometricCaptureError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometricCaptureError",
+                        "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                        "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO13captureFailedyACSScACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO13captureFailedyACSScACmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "userCancelled",
+            "printedName": "userCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.BiometricCaptureError.Type) -> SmartVerifyIOSSDK.BiometricCaptureError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiometricCaptureError",
+                    "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                    "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.BiometricCaptureError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometricCaptureError",
+                        "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                        "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO13userCancelledyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO13userCancelledyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sdkNotAvailable",
+            "printedName": "sdkNotAvailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.BiometricCaptureError.Type) -> SmartVerifyIOSSDK.BiometricCaptureError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiometricCaptureError",
+                    "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                    "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.BiometricCaptureError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometricCaptureError",
+                        "printedName": "SmartVerifyIOSSDK.BiometricCaptureError",
+                        "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO15sdkNotAvailableyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO15sdkNotAvailableyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17SmartVerifyIOSSDK21BiometricCaptureErrorO",
+        "mangledName": "$s17SmartVerifyIOSSDK21BiometricCaptureErrorO",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Errors",
+        "printedName": "Errors",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "http",
+            "printedName": "http",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.Errors.Type) -> (Swift.Int, Foundation.Data) -> SmartVerifyIOSSDK.Errors",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Foundation.Data) -> SmartVerifyIOSSDK.Errors",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, data: Foundation.Data)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.Errors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO4httpyACSi_10Foundation4DataVtcACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO4httpyACSi_10Foundation4DataVtcACmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "network",
+            "printedName": "network",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.Errors.Type) -> (any Swift.Error) -> SmartVerifyIOSSDK.Errors",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> SmartVerifyIOSSDK.Errors",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.Errors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO7networkyACs5Error_pcACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO7networkyACs5Error_pcACmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.Errors.Type) -> SmartVerifyIOSSDK.Errors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Errors",
+                    "printedName": "SmartVerifyIOSSDK.Errors",
+                    "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.Errors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO15invalidResponseyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO15invalidResponseyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidData",
+            "printedName": "invalidData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.Errors.Type) -> SmartVerifyIOSSDK.Errors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Errors",
+                    "printedName": "SmartVerifyIOSSDK.Errors",
+                    "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.Errors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO11invalidDatayA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO11invalidDatayA2CmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.Errors.Type) -> (Swift.String) -> SmartVerifyIOSSDK.Errors",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SmartVerifyIOSSDK.Errors",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.Errors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Errors",
+                        "printedName": "SmartVerifyIOSSDK.Errors",
+                        "usr": "s:17SmartVerifyIOSSDK6ErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO7unknownyACSScACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO7unknownyACSScACmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK6ErrorsO20localizedDescriptionSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO20localizedDescriptionSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK6ErrorsO20localizedDescriptionSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO20localizedDescriptionSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17SmartVerifyIOSSDK6ErrorsO",
+        "mangledName": "$s17SmartVerifyIOSSDK6ErrorsO",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartVerifyError",
+        "printedName": "SmartVerifyError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> (Swift.String, Swift.String) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> SmartVerifyIOSSDK.SmartVerifyError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.String, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO08internalD0yACSS_SStcACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO08internalD0yACSS_SStcACmF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceError",
+            "printedName": "serviceError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> (Swift.String, Swift.String) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> SmartVerifyIOSSDK.SmartVerifyError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.String, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO07serviceD0yACSS_SStcACmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO07serviceD0yACSS_SStcACmF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionDenied",
+            "printedName": "cameraPermissionDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifyError",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                    "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO22cameraPermissionDeniedyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO22cameraPermissionDeniedyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noInternetConnection",
+            "printedName": "noInternetConnection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifyError",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                    "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO20noInternetConnectionyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO20noInternetConnectionyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "facialRecognitionCanceled",
+            "printedName": "facialRecognitionCanceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifyError",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                    "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO25facialRecognitionCanceledyA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO25facialRecognitionCanceledyA2CmF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraNotAvailableOnSimulator",
+            "printedName": "cameraNotAvailableOnSimulator",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SmartVerifyIOSSDK.SmartVerifyError.Type) -> SmartVerifyIOSSDK.SmartVerifyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifyError",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                    "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SmartVerifyError",
+                        "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO29cameraNotAvailableOnSimulatoryA2CmF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO29cameraNotAvailableOnSimulatoryA2CmF",
+            "moduleName": "SmartVerifyIOSSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifyError",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifyError",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifyError",
+                "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO20localizedDescriptionSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO20localizedDescriptionSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17SmartVerifyIOSSDK0aB5ErrorO",
+        "mangledName": "$s17SmartVerifyIOSSDK0aB5ErrorO",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EncryptedOutputWireResponse",
+        "printedName": "EncryptedOutputWireResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "output",
+            "printedName": "output",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK27EncryptedOutputWireResponseV6outputSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK27EncryptedOutputWireResponseV6outputSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK27EncryptedOutputWireResponseV6outputSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK27EncryptedOutputWireResponseV6outputSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EncryptedOutputWireResponse",
+                "printedName": "SmartVerifyIOSSDK.EncryptedOutputWireResponse",
+                "usr": "s:17SmartVerifyIOSSDK27EncryptedOutputWireResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK27EncryptedOutputWireResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK27EncryptedOutputWireResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK27EncryptedOutputWireResponseV",
+        "mangledName": "$s17SmartVerifyIOSSDK27EncryptedOutputWireResponseV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetBiometricHashResponse",
+        "printedName": "GetBiometricHashResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV4codeSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV4codeSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV4codeSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV4codeSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV7messageSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV7messageSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV7messageSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV7messageSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "biometricHash",
+            "printedName": "biometricHash",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV09biometricF0SSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV09biometricF0SSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV09biometricF0SSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV09biometricF0SSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetBiometricHashResponse",
+                "printedName": "SmartVerifyIOSSDK.GetBiometricHashResponse",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV",
+        "mangledName": "$s17SmartVerifyIOSSDK24GetBiometricHashResponseV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitResponse",
+        "printedName": "InitResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK12InitResponseV4codeSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV4codeSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK12InitResponseV4codeSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV4codeSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK12InitResponseV7messageSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV7messageSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK12InitResponseV7messageSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV7messageSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitResponse",
+                "printedName": "SmartVerifyIOSSDK.InitResponse",
+                "usr": "s:17SmartVerifyIOSSDK12InitResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK12InitResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK12InitResponseV",
+        "mangledName": "$s17SmartVerifyIOSSDK12InitResponseV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitWireRequest",
+        "printedName": "InitWireRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV6apiKeySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK15InitWireRequestV6apiKeySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV6apiKeySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK15InitWireRequestV6apiKeySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireRequest",
+                "printedName": "SmartVerifyIOSSDK.InitWireRequest",
+                "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV6apiKeyACSS_tcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK15InitWireRequestV6apiKeyACSS_tcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17SmartVerifyIOSSDK15InitWireRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV",
+        "mangledName": "$s17SmartVerifyIOSSDK15InitWireRequestV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitWireResponse",
+        "printedName": "InitWireResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "responseStatus",
+            "printedName": "responseStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseStatusModel",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV14responseStatusAC0fH5ModelVSgvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV14responseStatusAC0fH5ModelVSgvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseStatusModel",
+                        "printedName": "SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel",
+                        "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV14responseStatusAC0fH5ModelVSgvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV14responseStatusAC0fH5ModelVSgvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConfigurationModel",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV13configurationAC18ConfigurationModelVSgvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV13configurationAC18ConfigurationModelVSgvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConfigurationModel",
+                        "printedName": "SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel",
+                        "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV13configurationAC18ConfigurationModelVSgvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV13configurationAC18ConfigurationModelVSgvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV9errorCodeSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV9errorCodeSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV9errorCodeSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV9errorCodeSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV7messageSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV7messageSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV7messageSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV7messageSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "liveness",
+            "printedName": "liveness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV8livenessSdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV8livenessSdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV8livenessSdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV8livenessSdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "quality",
+            "printedName": "quality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV7qualitySdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV7qualitySdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV7qualitySdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV7qualitySdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyesOpen",
+            "printedName": "eyesOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV8eyesOpenSdvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV8eyesOpenSdvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV8eyesOpenSdvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV8eyesOpenSdvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iv",
+            "printedName": "iv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV2ivSSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV2ivSSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV2ivSSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV2ivSSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV3keySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV3keySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV3keySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV3keySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV9timestampSivp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV9timestampSivp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV9timestampSivg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV9timestampSivg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenseKey",
+            "printedName": "licenseKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV10licenseKeySSvp",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV10licenseKeySSvp",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV10licenseKeySSvg",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV10licenseKeySSvg",
+                "moduleName": "SmartVerifyIOSSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ResponseStatusModel",
+            "printedName": "ResponseStatusModel",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "errorCode",
+                "printedName": "errorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV9errorCodeSSvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV9errorCodeSSvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV9errorCodeSSvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV9errorCodeSSvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "message",
+                "printedName": "message",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV7messageSSvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV7messageSSvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV7messageSSvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV7messageSSvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseStatusModel",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV0F11StatusModelV",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ConfigurationModel",
+            "printedName": "ConfigurationModel",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "liveness",
+                "printedName": "liveness",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8livenessSdvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8livenessSdvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8livenessSdvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8livenessSdvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "quality",
+                "printedName": "quality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV7qualitySdvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV7qualitySdvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV7qualitySdvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV7qualitySdvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "eyesOpen",
+                "printedName": "eyesOpen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8eyesOpenSdvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8eyesOpenSdvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8eyesOpenSdvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV8eyesOpenSdvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "iv",
+                "printedName": "iv",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV2ivSSvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV2ivSSvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV2ivSSvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV2ivSSvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "key",
+                "printedName": "key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV3keySSvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV3keySSvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV3keySSvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV3keySSvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "timestamp",
+                "printedName": "timestamp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV9timestampSivp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV9timestampSivp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV9timestampSivg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV9timestampSivg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "licenseKey",
+                "printedName": "licenseKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV10licenseKeySSvp",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV10licenseKeySSvp",
+                "moduleName": "SmartVerifyIOSSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV10licenseKeySSvg",
+                    "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV10licenseKeySSvg",
+                    "moduleName": "SmartVerifyIOSSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConfigurationModel",
+                    "printedName": "SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel",
+                    "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "SmartVerifyIOSSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV18ConfigurationModelV",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireResponse",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV",
+        "mangledName": "$s17SmartVerifyIOSSDK16InitWireResponseV",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitRepositoryProtocol",
+        "printedName": "InitRepositoryProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initSdk",
+            "printedName": "initSdk(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireResponse",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireRequest",
+                "printedName": "SmartVerifyIOSSDK.InitWireRequest",
+                "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK22InitRepositoryProtocolP7initSdkyAA0D12WireResponseVAA0dI7RequestVYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK22InitRepositoryProtocolP7initSdkyAA0D12WireResponseVAA0dI7RequestVYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SmartVerifyIOSSDK.InitRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : SmartVerifyIOSSDK.InitRepositoryProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17SmartVerifyIOSSDK22InitRepositoryProtocolP",
+        "mangledName": "$s17SmartVerifyIOSSDK22InitRepositoryProtocolP",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitRepositoryImpl",
+        "printedName": "InitRepositoryImpl",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(httpClient:crypto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitRepositoryImpl",
+                "printedName": "SmartVerifyIOSSDK.InitRepositoryImpl",
+                "usr": "s:17SmartVerifyIOSSDK18InitRepositoryImplC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPClient",
+                "printedName": "any SmartVerifyIOSSDK.HTTPClient",
+                "usr": "s:17SmartVerifyIOSSDK10HTTPClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifyCrypto",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifyCrypto",
+                "usr": "s:17SmartVerifyIOSSDK0aB6CryptoC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK18InitRepositoryImplC10httpClient6cryptoAcA10HTTPClient_p_AA0aB6CryptoCtcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK18InitRepositoryImplC10httpClient6cryptoAcA10HTTPClient_p_AA0aB6CryptoCtcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initSdk",
+            "printedName": "initSdk(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireResponse",
+                "printedName": "SmartVerifyIOSSDK.InitWireResponse",
+                "usr": "s:17SmartVerifyIOSSDK16InitWireResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InitWireRequest",
+                "printedName": "SmartVerifyIOSSDK.InitWireRequest",
+                "usr": "s:17SmartVerifyIOSSDK15InitWireRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK18InitRepositoryImplC7initSdkyAA0D12WireResponseVAA0dI7RequestVYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK18InitRepositoryImplC7initSdkyAA0D12WireResponseVAA0dI7RequestVYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK18InitRepositoryImplC",
+        "mangledName": "$s17SmartVerifyIOSSDK18InitRepositoryImplC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "InitRepositoryProtocol",
+            "printedName": "InitRepositoryProtocol",
+            "usr": "s:17SmartVerifyIOSSDK22InitRepositoryProtocolP",
+            "mangledName": "$s17SmartVerifyIOSSDK22InitRepositoryProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetBiometricHashUseCase",
+        "printedName": "GetBiometricHashUseCase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetBiometricHashUseCase",
+                "printedName": "SmartVerifyIOSSDK.GetBiometricHashUseCase",
+                "usr": "s:17SmartVerifyIOSSDK23GetBiometricHashUseCaseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK23GetBiometricHashUseCaseCACycfc",
+            "mangledName": "$s17SmartVerifyIOSSDK23GetBiometricHashUseCaseCACycfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getBiometricHash",
+            "printedName": "getBiometricHash(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetBiometricHashResponse",
+                "printedName": "SmartVerifyIOSSDK.GetBiometricHashResponse",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK23GetBiometricHashUseCaseC03geteF04fromAA0deF8ResponseVSo16UIViewControllerC_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK23GetBiometricHashUseCaseC03geteF04fromAA0deF8ResponseVSo16UIViewControllerC_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK23GetBiometricHashUseCaseC",
+        "mangledName": "$s17SmartVerifyIOSSDK23GetBiometricHashUseCaseC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitUseCase",
+        "printedName": "InitUseCase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(repository:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitUseCase",
+                "printedName": "SmartVerifyIOSSDK.InitUseCase",
+                "usr": "s:17SmartVerifyIOSSDK11InitUseCaseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InitRepositoryProtocol",
+                "printedName": "any SmartVerifyIOSSDK.InitRepositoryProtocol",
+                "usr": "s:17SmartVerifyIOSSDK22InitRepositoryProtocolP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK11InitUseCaseC10repositoryAcA0D18RepositoryProtocol_p_tcfc",
+            "mangledName": "$s17SmartVerifyIOSSDK11InitUseCaseC10repositoryAcA0D18RepositoryProtocol_p_tcfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitResponse",
+                "printedName": "SmartVerifyIOSSDK.InitResponse",
+                "usr": "s:17SmartVerifyIOSSDK12InitResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK11InitUseCaseC10initialize6apiKeyAA0D8ResponseVSS_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK11InitUseCaseC10initialize6apiKeyAA0D8ResponseVSS_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK11InitUseCaseC",
+        "mangledName": "$s17SmartVerifyIOSSDK11InitUseCaseC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartVerifySDK",
+        "printedName": "SmartVerifySDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifySDK",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifySDK",
+                "usr": "s:17SmartVerifyIOSSDK0aB3SDKC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17SmartVerifyIOSSDK0aB3SDKC6sharedACvpZ",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKC6sharedACvpZ",
+            "moduleName": "SmartVerifyIOSSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SmartVerifySDK",
+                    "printedName": "SmartVerifyIOSSDK.SmartVerifySDK",
+                    "usr": "s:17SmartVerifyIOSSDK0aB3SDKC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17SmartVerifyIOSSDK0aB3SDKC6sharedACvgZ",
+                "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKC6sharedACvgZ",
+                "moduleName": "SmartVerifyIOSSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartVerifySDK",
+                "printedName": "SmartVerifyIOSSDK.SmartVerifySDK",
+                "usr": "s:17SmartVerifyIOSSDK0aB3SDKC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17SmartVerifyIOSSDK0aB3SDKCACycfc",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKCACycfc",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InitResponse",
+                "printedName": "SmartVerifyIOSSDK.InitResponse",
+                "usr": "s:17SmartVerifyIOSSDK12InitResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB3SDKC10initialize6apiKeyAA12InitResponseVSS_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKC10initialize6apiKeyAA12InitResponseVSS_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBiometricHash",
+            "printedName": "getBiometricHash(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetBiometricHashResponse",
+                "printedName": "SmartVerifyIOSSDK.GetBiometricHashResponse",
+                "usr": "s:17SmartVerifyIOSSDK24GetBiometricHashResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17SmartVerifyIOSSDK0aB3SDKC16getBiometricHash4fromAA03GetfG8ResponseVSo16UIViewControllerC_tYaKF",
+            "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKC16getBiometricHash4fromAA03GetfG8ResponseVSo16UIViewControllerC_tYaKF",
+            "moduleName": "SmartVerifyIOSSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17SmartVerifyIOSSDK0aB3SDKC",
+        "mangledName": "$s17SmartVerifyIOSSDK0aB3SDKC",
+        "moduleName": "SmartVerifyIOSSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "SmartVerifyIOSSDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/API\/HTTPClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/API\/HTTPClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 651,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 178,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 228,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 474,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Config\/SmartVerifyConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 525,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Encryption\/EncryptionUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 444,
+      "value": "\"-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAxNXkk\/d9gvqQd\/g4QH694dbNz9K7JQJBZVHPsjk6Ptgj\/fJL6QLeJGKlKhbgU7mLJHwRwitBfiF3cm14cMrcaR3hLpjnVhzksk7+ONoeSgVXGBGBRm454cl5\/+udPynseXJckP\/WhGgZXdsNnUmPR9DYeh9IDf\/qbEp5KKED0yaa7P9uE7dG7sB2M5jOY7dcg2fzpXqDQW49q2YtoId+O4DZhOPjbMUd0tgyuSogv7McErWYC3BI0Vd8VJOSXuBLwGLENbRbsIkObsuWVRdSNYruZ6KEF8qEi2JuDjxiEuLoxIFhQW+pEeZKvxUJGoo2++VmLAYdh64J0rMs02Aq1QIDAQAB\n-----END RSA PUBLIC KEY-----\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Encryption\/EncryptionUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 670,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Encryption\/EncryptionUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 3,
+      "value": "\"|\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Encryption\/EncryptionUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 772,
+      "length": 4,
+      "value": "\"||\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/LuxandHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 139,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionCamera.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionCamera.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 12,
+      "value": "\" VER LOGS \""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 916,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1005,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1091,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1149,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5040,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5065,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5094,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5128,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5155,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5244,
+      "length": 2,
+      "value": "46"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5247,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5259,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5263,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5274,
+      "length": 3,
+      "value": "113"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5278,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 5290,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5314,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 5363,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5631,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5910,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5948,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5987,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6049,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6087,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6206,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6250,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6314,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6369,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6804,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6936,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6983,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7146,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7172,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7283,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7321,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7418,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/PassiveLiveness\/RecognitionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17927,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Utils\/Validators\/TimestampValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Secrets.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 46,
+      "value": "\"https:\/\/dev-apigateway.smartverifyonline.com\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Secrets.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 38,
+      "value": "\"3268A075-2837-400B-B3C6-242AC0BF1D47\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Secrets.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 34,
+      "value": "\"a7b3d4e5f6c1d2a3b4c5e6f7a1b2c3d4\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Development\/ios\/SmartVerify.iOSSDK\/SmartVerifyIOSSDK\/Core\/Secrets.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 34,
+      "value": "\"3a1f9c4d8b67a5e2c1f3d7e9ab4c8d2f\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Library\/Developer\/Xcode\/DerivedData\/PassiveLivenessRecognition-fxdkhlodfcllukbmjdcixvhkefqo\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVerifyIOSSDK\/IntermediateBuildFilesPath\/PassiveLivenessRecognition.build\/Release-iphoneos\/SmartVerifyIOSSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 726,
+      "length": 9,
+      "value": "\"ic_back\""
+    },
+    {
+      "filePath": "\/Users\/ecardona\/Library\/Developer\/Xcode\/DerivedData\/PassiveLivenessRecognition-fxdkhlodfcllukbmjdcixvhkefqo\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVerifyIOSSDK\/IntermediateBuildFilesPath\/PassiveLivenessRecognition.build\/Release-iphoneos\/SmartVerifyIOSSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 10,
+      "value": "\"ic_close\""
+    }
+  ]
+}

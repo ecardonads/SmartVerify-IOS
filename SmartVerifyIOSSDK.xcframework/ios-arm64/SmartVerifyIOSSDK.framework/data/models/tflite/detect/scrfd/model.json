@@ -1,0 +1,44 @@
+{
+    "model_file": "scrfd_500m_fp16_squeezed.tflite",
+    "normalization": "plus-minus-one",
+
+    "inputs": [
+        {
+            "name": "inputs_0",
+            "shape": [640, 640, 3]
+        }
+    ],
+
+    "outputs": [
+        {
+            "alias": "score8",
+            "name": "Identity_2",
+            "shape": [12800]
+        },
+        {
+            "alias": "score16",
+            "name": "Identity_1",
+            "shape": [3200]
+        },
+        {
+            "alias": "score32",
+            "name": "Identity",
+            "shape": [800]
+        },
+        {
+            "alias": "bbox8",
+            "name": "Identity_5",
+            "shape": [12800, 4]
+        },
+        {
+            "alias": "bbox16",
+            "name": "Identity_4",
+            "shape": [3200, 4]
+        },
+        {
+            "alias": "bbox32",
+            "name": "Identity_3",
+            "shape": [800, 4]
+        }
+    ]
+}

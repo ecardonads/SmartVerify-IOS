@@ -1,0 +1,12 @@
+//
+//  module.modulemap
+//  SmartVerifyIOSSDK
+
+framework module SmartVerifyIOSSDK {
+  umbrella header "SmartVerifyIOSSDK.h"
+  export *
+  module * { export * }
+
+  link "fsdk-static"
+  link "IBetaPlugin"
+}

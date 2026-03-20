@@ -1,0 +1,16 @@
+{
+    "model_file": "061055aabb0301b4bb9fd96d69f39a48.tflite",
+    "normalization": "imagenet",
+    "inputs": [
+        {
+            "name": "x",
+            "shape": [384, 384, 3]
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Identity",
+            "shape": [1]
+        }
+    ]
+}

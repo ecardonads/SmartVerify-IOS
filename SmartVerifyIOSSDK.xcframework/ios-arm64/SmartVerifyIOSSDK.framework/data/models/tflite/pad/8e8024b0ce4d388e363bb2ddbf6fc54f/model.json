@@ -1,0 +1,16 @@
+{
+    "model_file": "8e8024b0ce4d388e363bb2ddbf6fc54f.tflite",
+    "normalization": "raw",
+    "inputs": [
+        {
+            "name": "x",
+            "shape": [312, 312, 3]
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Identity",
+            "shape": [1]
+        }
+    ]
+}

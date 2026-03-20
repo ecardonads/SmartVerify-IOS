@@ -1,0 +1,213 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SmartVerifyIOSSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import AVKit
+import CommonCrypto
+import DeveloperToolsSupport
+import Foundation
+import Network
+import Security
+@_exported import SmartVerifyIOSSDK
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol HTTPClient {
+  func getJSON(path: Swift.String, headers: [Swift.String : Swift.String]) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+  func getJSON(path: Swift.String) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+}
+final public class DefaultHTTPClient : SmartVerifyIOSSDK.HTTPClient {
+  public init(enableLogs: Swift.Bool = true)
+  final public func getJSON(path: Swift.String) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+  final public func getJSON(path: Swift.String, headers: [Swift.String : Swift.String]) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SmartVerifyConfig {
+  public static let shared: SmartVerifyIOSSDK.SmartVerifyConfig
+  final public var apiKey: Swift.String {
+    get
+  }
+  final public var liveness: Swift.Double {
+    get
+  }
+  final public var quality: Swift.Double {
+    get
+  }
+  final public var eyesOpen: Swift.Double {
+    get
+  }
+  final public var serverKey: Swift.String {
+    get
+  }
+  final public var serverIv: Swift.String {
+    get
+  }
+  final public var timestamp: Swift.Int {
+    get
+  }
+  final public var licenseKey: Swift.String {
+    get
+  }
+  final public var isInitialized: Swift.Bool {
+    get
+  }
+  final public func apply(apiKey: Swift.String, wire: SmartVerifyIOSSDK.InitWireResponse)
+  final public func reset()
+  @objc deinit
+}
+public class EncryptionService {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func encryptBiometricHash(_ biometricHash: Swift.String) -> Swift.String?
+  #endif
+  @objc deinit
+}
+public struct EncryptionUtil {
+  public static let PUBLIC_KEY: Swift.String
+  public static let MAX_CHUNK_SIZE: Swift.Int
+  public static let CHUNK_DELIMITER: Swift.String
+  public static let TIMESTAMP_DELIMITER: Swift.String
+}
+final public class SmartVerifyCrypto {
+  public init(key: Swift.String, iv: Swift.String) throws
+  final public func decryptBase64ToUTF8String(_ base64: Swift.String) throws -> Swift.String
+  final public func encryptUTF8StringToBase64(_ plainText: Swift.String) throws -> Swift.String
+  @objc deinit
+}
+public enum SmartVerifyTimestampValidator {
+  public static func validateWithinAbsoluteWindow(serverEpochSeconds: Swift.Int, graceMinutes: Swift.Int = 1) throws
+}
+@_hasMissingDesignatedInitializers public class BiometricCaptureService {
+  public static func captureBiometricData(from presenter: UIKit.UIViewController) async throws -> Swift.String
+  @objc deinit
+}
+public enum BiometricCaptureError : Swift.Error, Foundation.LocalizedError {
+  case captureFailed(Swift.String)
+  case userCancelled
+  case sdkNotAvailable
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public enum Errors : Swift.Error {
+  case http(Swift.Int, data: Foundation.Data)
+  case network(any Swift.Error)
+  case invalidResponse
+  case invalidData
+  case unknown(Swift.String)
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public enum SmartVerifyError : Swift.Error, Swift.Equatable {
+  case internalError(code: Swift.String, message: Swift.String)
+  case serviceError(code: Swift.String, message: Swift.String)
+  case cameraPermissionDenied
+  case noInternetConnection
+  case facialRecognitionCanceled
+  case cameraNotAvailableOnSimulator
+  public static func == (a: SmartVerifyIOSSDK.SmartVerifyError, b: SmartVerifyIOSSDK.SmartVerifyError) -> Swift.Bool
+}
+extension SmartVerifyIOSSDK.SmartVerifyError {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public struct EncryptedOutputWireResponse : Swift.Decodable {
+  public let output: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetBiometricHashResponse : Swift.Decodable {
+  public let code: Swift.String
+  public let message: Swift.String
+  public let biometricHash: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InitResponse : Swift.Decodable {
+  public let code: Swift.String
+  public let message: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InitWireRequest : Swift.Encodable {
+  public let apiKey: Swift.String
+  public init(apiKey: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct InitWireResponse : Swift.Decodable {
+  public let responseStatus: SmartVerifyIOSSDK.InitWireResponse.ResponseStatusModel?
+  public let configuration: SmartVerifyIOSSDK.InitWireResponse.ConfigurationModel?
+  public var errorCode: Swift.String {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+  public var liveness: Swift.Double {
+    get
+  }
+  public var quality: Swift.Double {
+    get
+  }
+  public var eyesOpen: Swift.Double {
+    get
+  }
+  public var iv: Swift.String {
+    get
+  }
+  public var key: Swift.String {
+    get
+  }
+  public var timestamp: Swift.Int {
+    get
+  }
+  public var licenseKey: Swift.String {
+    get
+  }
+  public struct ResponseStatusModel : Swift.Decodable {
+    public let errorCode: Swift.String
+    public let message: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct ConfigurationModel : Swift.Decodable {
+    public let liveness: Swift.Double
+    public let quality: Swift.Double
+    public let eyesOpen: Swift.Double
+    public let iv: Swift.String
+    public let key: Swift.String
+    public let timestamp: Swift.Int
+    public let licenseKey: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol InitRepositoryProtocol {
+  func initSdk(_ request: SmartVerifyIOSSDK.InitWireRequest) async throws -> SmartVerifyIOSSDK.InitWireResponse
+}
+final public class InitRepositoryImpl : SmartVerifyIOSSDK.InitRepositoryProtocol {
+  public init(httpClient: any SmartVerifyIOSSDK.HTTPClient, crypto: SmartVerifyIOSSDK.SmartVerifyCrypto)
+  final public func initSdk(_ request: SmartVerifyIOSSDK.InitWireRequest) async throws -> SmartVerifyIOSSDK.InitWireResponse
+  @objc deinit
+}
+final public class GetBiometricHashUseCase {
+  public init()
+  final public func getBiometricHash(from presenter: UIKit.UIViewController) async throws -> SmartVerifyIOSSDK.GetBiometricHashResponse
+  @objc deinit
+}
+final public class InitUseCase {
+  public init(repository: any SmartVerifyIOSSDK.InitRepositoryProtocol)
+  final public func initialize(apiKey: Swift.String) async throws -> SmartVerifyIOSSDK.InitResponse
+  @objc deinit
+}
+final public class SmartVerifySDK {
+  public static let shared: SmartVerifyIOSSDK.SmartVerifySDK
+  public init()
+  final public func initialize(apiKey: Swift.String) async throws -> SmartVerifyIOSSDK.InitResponse
+  final public func getBiometricHash(from presenter: UIKit.UIViewController) async throws -> SmartVerifyIOSSDK.GetBiometricHashResponse
+  @objc deinit
+}

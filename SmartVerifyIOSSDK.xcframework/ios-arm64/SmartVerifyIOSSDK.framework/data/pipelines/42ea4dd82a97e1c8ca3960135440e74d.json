@@ -1,0 +1,46 @@
+{
+    "backends": ["openvino", "tensorflow", "tflite"],
+
+    "preprocessors": [
+        {
+            "id": "crop-x1.3",
+            "type": "crop",
+            "side_scale": 1.3
+        },
+        {
+            "id": "fixed-ratio-crop-0.75-x1.5",
+            "type": "fixed-ratio-crop",
+            "ratio": 0.75,
+            "area_scale": 1.5,
+            "background": [124, 116, 104]
+        }
+    ],
+
+    "compute": [
+        {
+            "model": "pad/061055aabb0301b4bb9fd96d69f39a48",
+            "preprocessor": "crop-x1.3"
+        },
+        {
+            "model": "pad/7736fd16bbb809e4513f8d14f97cfacb",
+            "preprocessor": "fixed-ratio-crop-0.75-x1.5"
+        },
+        {
+            "model": "pad/8e8024b0ce4d388e363bb2ddbf6fc54f",
+            "preprocessor": "original"
+        }
+    ],
+
+    "fuse": {
+        "type": "linear",
+
+        "bias": -2.64235,
+        "bias.desktop": -2.36875,
+
+        "weights": {
+            "pad/061055aabb0301b4bb9fd96d69f39a48": 0.098996,
+            "pad/7736fd16bbb809e4513f8d14f97cfacb": 0.114639,
+            "pad/8e8024b0ce4d388e363bb2ddbf6fc54f": 0.127596
+        }
+    }
+}
