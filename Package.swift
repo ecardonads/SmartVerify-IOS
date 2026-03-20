@@ -1,6 +1,3 @@
-// Apple Swift version 6.2.3 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 
 import PackageDescription
 
@@ -10,6 +7,7 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
+
         .library(
             name: "SmartVerifyIOSSDK",
             targets: ["SmartVerifyIOSSDK", "FaceSdk"]
@@ -18,10 +16,12 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .target(
+
+        .binaryTarget(
             name: "SmartVerifyIOSSDK",
-            dependencies: ["FaceSdk"]
+            path: "SmartVerifyIOSSDK.xcframework"
         ),
+
         .binaryTarget(
             name: "FaceSdk",
             path: "FaceSdk.xcframework"
