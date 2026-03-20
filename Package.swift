@@ -1,4 +1,4 @@
-
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
@@ -7,16 +7,13 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-
         .library(
             name: "SmartVerifyIOSSDK",
             targets: ["SmartVerifyIOSSDK", "FaceSdk"]
         ),
     ],
-    dependencies: [
-    ],
     targets: [
-
+        
         .binaryTarget(
             name: "SmartVerifyIOSSDK",
             path: "SmartVerifyIOSSDK.xcframework"
